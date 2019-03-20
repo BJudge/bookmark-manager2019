@@ -25,3 +25,14 @@ I would like to be able to add tags to my bookmarks
 As a User
 so that I can selectively see specific bookmarks
 I would like to be able to filter through the tags of my bookmarks
+
+
+### To set up the database
+
+ Connect to `psql` and create the `bookmark_manager` database:
+
+ ```
+CREATE DATABASE bookmark_manager;
+```
+
+ To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.

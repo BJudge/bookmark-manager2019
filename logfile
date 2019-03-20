@@ -1,0 +1,4 @@
+2019-03-20 13:29:29.901 GMT [91778] FATAL:  database files are incompatible with server
+2019-03-20 13:29:29.901 GMT [91778] DETAIL:  The data directory was initialized by PostgreSQL version 9.5, which is not compatible with this version 11.2.
+2019-03-20 13:49:02.201 GMT [3457] FATAL:  lock file "postmaster.pid" already exists
+2019-03-20 13:49:02.201 GMT [3457] HINT:  Is another postmaster (PID 3429) running in data directory "/usr/local/var/postgres"?
