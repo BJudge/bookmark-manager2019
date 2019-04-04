@@ -34,5 +34,9 @@ I would like to be able to filter through the tags of my bookmarks
  ```
 CREATE DATABASE bookmark_manager;
 ```
+To create the database for the test environment
+```
+CREATE DATABASE "bookmark_manager_test";
+```
 
  To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
