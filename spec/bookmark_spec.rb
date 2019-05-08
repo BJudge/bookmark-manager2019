@@ -20,8 +20,8 @@ describe Bookmark do
   end
   describe '.create' do
     it 'creates a new bookmark' do
-      bookmark = Bookmark.create(url: 'http://www.testbookmark.com', title: 'Test Bookmark').first
-      persisted_data = persisted_data(id: bookmark.id)
+      bookmark = Bookmark.create(url: 'http://www.testbookmark.com', title: 'Test Bookmark')
+      persisted_data = persisted_data(id: bookmark.id, table: 'bookmarks')
 
 
       expect(bookmark).to be_a Bookmark

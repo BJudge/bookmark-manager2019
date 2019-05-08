@@ -15,7 +15,7 @@ class BookmarkManager < Sinatra::Base
     "Bookmark Manager"
   end
   get '/bookmarks' do
-    @user = User.find(id: session[:user_id])
+    @user = User.find(session[:user_id])
     @bookmarks = Bookmark.all
     erb :'bookmarks/index'
   end
