@@ -10,3 +10,5 @@ CREATE TABLE comments(id SERIAL PRIMARY KEY, text VARCHAR(240), bookmark_id INTE
 
 CREATE TABLE tags (id SERIAL PRIMARY KEY, content VARCHAR(60));
 CREATE TABLE bookmark_tags (id SERIAL PRIMARY KEY, tag_id INTEGER REFERENCES tags (id), bookmark_id INTEGER REFERENCES bookmarks (id));
+
+CREATE TABLE users(id SERIAL PRIMARY KEY, email VARCHAR(60), password VARCHAR(140));
